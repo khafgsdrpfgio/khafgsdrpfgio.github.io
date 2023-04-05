@@ -1,40 +1,47 @@
 <!DOCTYPE html>
 <html>
 
-	<head>
-		<meta charset="utf-8" />
-		<title>云端清理</title>
-		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-		<link rel="stylesheet" href="css/common.css" />
-		<link rel="stylesheet" href="font/icon/iconfont.css" />
-	</head>
+<head>
+	<meta charset="utf-8" />
+	<title>云端清理</title>
+	<meta name="viewport"
+		content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="font/icon/iconfont.css" />
+	<style>
+		* {
+			background-color: #fbd1dd;
+		}
+	</style>
+</head>
 
-	<body>
-        <script>
-            (function(d, w, c) {
-              if (w[c]) return;
-              var s = d.createElement("script");
-              w[c] = function() {
-                (w[c].z = w[c].z || []).push(arguments);
-              };
-              s.async = true;
-              s.src = "https://static.ahc.ink/hecong.js";
-              if (d.head) d.head.appendChild(s);
-            })(document, window, "_AIHECONG");
-            _AIHECONG("ini",{ channelId : "GvaH51" });
-			function showChat() {
-				_AIHECONG('showChat')
-			}
-          </script>
-		<div id="wrap" class="wrap">
-			<section>
-				<div class="middle_show">
-					<img src="img/clean_1.webp"  alt=""/>
-					<img src="img/price_2.gif" onclick="showChat()"  alt="price"/>
-					<img src="img/clean_2.webp"  alt=""/>
-					<img src="img/clean_3.webp"  alt=""/>
-				</div>
-			</section>
-		</div>
-	</body>
+<body>
+	<script>
+		(function (d, w, c) {
+			if (w[c]) return;
+			var s = d.createElement("script");
+			w[c] = function () {
+				(w[c].z = w[c].z || []).push(arguments);
+			};
+			s.async = true;
+			s.src = "https://static.ahc.ink/hecong.js";
+			if (d.head) d.head.appendChild(s);
+		})(document, window, "_AIHECONG");
+		_AIHECONG("ini", { channelId: "GvaH51", button: false });
+		function showChat() {
+			_AIHECONG('showChat')
+		}
+	</script>
+	<div id="wrap" class="wrap">
+		<section>
+			<div class="middle_show" onclick="showChat()">
+				<img src="img/clean_1.webp" alt="" />
+				<img src="img/price_2.gif" alt="price" />
+				<img src="img/clean_2.webp" alt="" />
+				<img src="img/clean_3.webp" alt="" />
+			</div>
+		</section>
+	</div>
+</body>
+
 </html>
